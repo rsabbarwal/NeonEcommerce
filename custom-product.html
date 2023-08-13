@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sacramento:400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Custom Neon Light</title>
+  </head>
+  <body>
+    <div class="nav container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">sStore</a>
+      <!-- Cart Icon -->
+      <i class="bx bxs-shopping-bag" id="cart-icon" data-quantitiy="0"></i>
+      <!-- Cart -->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- Buy Button -->
+        <button type="button" class="btn-buy">Pay Now</button>
+        <!-- Close Button -->
+        <i class="bx bx-x" id="close-cart"></i>
+      </div>
+    </div>
+
+    <main id="custom-main">
+      <div class="out">
+        <h1 id="showMsg" class="neonText">Some Message</h1>
+      </div>
+
+      <div class="format">
+        <h2 class="format-h2">Custom Neon Text</h2>
+        <h3>Write Your Text</h3>
+
+        <input
+          maxlength="20"
+          type="text"
+          oninput="showText()"
+          class="custom-input"
+          name=""
+          id="input"
+          value=""
+          placeholder="Enter Name"
+        />
+
+        <h3>Chose Font</h3>
+        <button type="button" id="fonts1" name="button">Style Script</button>
+        <button type="button" id="fonts2" name="button">Palette</button>
+        <button type="button" id="fonts3" name="button">Comfortaa</button>
+        <button type="button" id="fonts4" name="button">Shadows</button>
+
+        <h3>Chose Color</h3>
+        <div class="colors">
+          <div class="favcolor1" id="favcolor1"></div>
+          <div class="favcolor2" id="favcolor2"></div>
+          <div class="favcolor3" id="favcolor3"></div>
+          <div class="favcolor4" id="favcolor4"></div>
+        </div>
+
+        <button class="custom-submit">Submit</button>
+      </div>
+    </main>
+
+    <section class="footer-section footer">
+      <div class="footer-content">
+        <img
+          id="footer-img"
+          src="https://blogger.googleusercontent.com/img/a/AVvXsEiK19G1dVcUDsUVPNkuZRm5ylFtE2MNAbTyqBkVOd6ZWItbG2rW-J6RWU3ISGKujs1_cBscR-6jvj547hvvssiDJBAxG79pmjRBq2TQwG55u66Q-q_FqhbnIGy7a126PmUcSH0JPakrxBrE0GK632GmHmGIs3a4bJac4NUpmOmES1WEuCKeTjcufG0HXDfq"
+        />
+        <p>Follow us</p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <h4>Trending</h4>
+        <li><a href="#">Neon Sign</a></li>
+        <li><a href="#">Gaming Rooms</a></li>
+        <li><a href="#">For Walls</a></li>
+        <li><a href="#">Best Selling</a></li>
+      </div>
+      <div class="footer-content">
+        <h4>Company</h4>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">How we work</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </div>
+      <div class="footer-content">
+        <h4>Help</h4>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">FAQS</a></li>
+      </div>
+    </section>
+    <script type="text/javascript" src="custom.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
